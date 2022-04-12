@@ -1,0 +1,7 @@
+{
+  "name": "FormacionIonic",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
