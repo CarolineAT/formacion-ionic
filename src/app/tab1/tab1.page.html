@@ -1,17 +1,81 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>
-      Tab 1
+    <ion-title color="primary">
+      <ion-icon name="logo-ionic"></ion-icon>
+      Teoría 
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <ion-content>
+    <ion-slides pager="true">
+      <ion-slide>
+        <ion-card class="card">
+          <ion-card-header>
+            <ion-card-subtitle>
+              <ion-icon name="logo-ionic"></ion-icon> Teoría Ionic
+            </ion-card-subtitle>
+            <ion-card-title>¿Qué es ionic?</ion-card-title>
+          </ion-card-header>
+          <ion-card-content class="cardStyle">
+            <img class="cardImg" src="../../assets/img/logo.png" alt="Diagrama ionic" />
+            <h1>Framework SDK frontend de código abierto para desarrollar aplicaciones híbridas basado en tecnologías
+              web HTML, CSS y JS. </h1>
+          </ion-card-content>
+        </ion-card>
+      </ion-slide>
+      <ion-slide>
+        <ion-card class="card">
+          <ion-card-header>
+            <ion-card-subtitle>
+              <ion-icon name="logo-ionic"></ion-icon> Teoría Ionic
+            </ion-card-subtitle>
+            <ion-card-title>Características</ion-card-title>
+          </ion-card-header>
+          <ion-card-content class="cardStyle">
+            <ion-list class="list">
+              <ion-item>
+                <ion-label>Aplicaciones híbridas</ion-label>
+              </ion-item>
+              <ion-item>
+                <ion-label>Buen diseño</ion-label>
+              </ion-item>
+              <ion-item>
+                <ion-label>Emplea Capacitor</ion-label>
+              </ion-item>
+              <ion-item>
+                <ion-label>HTML, CSS y Javascript</ion-label>
+              </ion-item>
+              <ion-item>
+                <ion-label>Angular, React y Vue</ion-label>
+              </ion-item>
+              <ion-item>
+                <ion-label>Conocimiento en desarrollo web</ion-label>
+              </ion-item>
+            </ion-list>
+          </ion-card-content>
+        </ion-card>
+      </ion-slide>
+      <ion-slide>
+        <ion-card class="card">
+          <ion-card-header>
+            <ion-card-subtitle>
+              <ion-icon name="logo-ionic"></ion-icon> Teoría Ionic
+            </ion-card-subtitle>
+            <ion-card-title>Sesión práctica</ion-card-title>
+          </ion-card-header>
+          <ion-card-content class="cardStyle">
+            <h1 style="margin-bottom: 20px;">Creación de una aplicación Ionic </h1>
+            <p class="comando"> $ npm install -g @ionic/cli</p>
+            <p class="comando"> $ ionic start </p>
+            <p class="comando"> $ cd myApp</p>
+            <p class="comando"> $ ionic serve</p>
+            <p class="comando"> $ ionic generate [options]</p>
+          </ion-card-content>
+        </ion-card>
+      </ion-slide>
+    </ion-slides>
+  </ion-content>
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
 </ion-content>
