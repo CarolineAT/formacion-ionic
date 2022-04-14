@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { IonContent, ModalController,} from '@ionic/angular';
+import { ModalPage } from '../pages/modal/modal.page';
 
 @Component({
   selector: 'app-tab2',
@@ -7,6 +9,25 @@ import { Component } from '@angular/core';
 })
 export class Tab2Page {
 
-  constructor() {}
+  @ViewChild(IonContent, { static: false }) content: IonContent;
+
+  constructor(public modalController: ModalController) { }
+
+  ngOnInit(){
+
+  }
+
+  ScrollToTop() {
+    this.content.scrollToTop(1500);
+  }
+
+  async presentModal() {
+    const modal = await this.modalController.create({
+      component: ModalPage,
+      cssClass: 'my-custom-class'
+    });
+    return await modal.present();
+  }
+
 
 }

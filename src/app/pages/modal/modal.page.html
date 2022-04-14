@@ -1,0 +1,20 @@
+  <!-- Use a trigger -->
+  <ion-button id="trigger-button" expand="full">Abrir Modal</ion-button>
+
+<ion-modal trigger="trigger-button">
+  <ng-template>
+    
+    <ion-header>
+      <ion-toolbar color="primary">
+          <ion-buttons slot="end">
+              <ion-button color="light" (click)="closeModal()">
+                <ion-icon size="large" name="close-sharp"></ion-icon>
+              </ion-button>
+          </ion-buttons>
+          <ion-title color="light">VISOR PDF</ion-title>
+      </ion-toolbar>
+    </ion-header>
+
+    <ion-content>Modal Content</ion-content>
+  </ng-template>
+</ion-modal>
