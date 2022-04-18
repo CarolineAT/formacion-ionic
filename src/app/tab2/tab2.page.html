@@ -1,17 +1,20 @@
-<ion-header [translucent]="true">
+<ion-header>
   <ion-toolbar>
-    <ion-title>
-      Tab 2
+    <ion-title color="primary">
+      Componentes
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 2</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content>
 
-  <app-explore-container name="Tab 2 page"></app-explore-container>
+  <app-card></app-card>
+  <app-avatar></app-avatar>
+  <app-fab-lista></app-fab-lista>
+  <app-modal></app-modal>
+
+  <ion-button class="btn-top" color="primary" (click)="ScrollToTop()">
+    <ion-icon color="light" name="arrow-up"></ion-icon>
+  </ion-button>
+
 </ion-content>

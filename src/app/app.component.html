@@ -1,3 +1,25 @@
 <ion-app>
-  <ion-router-outlet></ion-router-outlet>
+
+<ion-menu side="end" menuId="first" contentId="main">
+
+  <ion-header>
+    <ion-toolbar color="primary">
+      <ion-title class="ion-text-center">Menú</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content>
+
+    <ion-list>
+      <ion-menu-toggle>
+        <ion-item [routerLink]="['/tabs/tab1']"><ion-icon color="danger" slot="start" name="triangle"></ion-icon> Teoría</ion-item>
+        <ion-item [routerLink]="['/tabs/tab2']"><ion-icon color="danger" slot="start" name="ellipse"></ion-icon> Componentes</ion-item>
+        <ion-item [routerLink]="['/tabs/tab3']"><ion-icon color="danger" slot="start" name="square"></ion-icon> Práctico</ion-item>
+      </ion-menu-toggle>
+    </ion-list>
+    
+  </ion-content>
+</ion-menu>
+
+  <ion-router-outlet id="main"></ion-router-outlet>
 </ion-app>
