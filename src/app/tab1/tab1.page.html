@@ -2,7 +2,7 @@
   <ion-toolbar>
     <ion-title color="primary">
       <ion-icon name="logo-ionic"></ion-icon>
-      Teoría 
+      Teoría
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -31,7 +31,7 @@
             <ion-card-subtitle>
               <ion-icon name="logo-ionic"></ion-icon> Teoría Ionic
             </ion-card-subtitle>
-            <ion-card-title>Características</ion-card-title>
+            <ion-card-title>Características y ventajas</ion-card-title>
           </ion-card-header>
           <ion-card-content class="cardStyle">
             <ion-list class="list">
@@ -63,6 +63,24 @@
             <ion-card-subtitle>
               <ion-icon name="logo-ionic"></ion-icon> Teoría Ionic
             </ion-card-subtitle>
+            <ion-card-title>Desventajas</ion-card-title>
+          </ion-card-header>
+          <ion-card-content class="cardStyle" style="text-align: left;">
+            <ion-text class="text" color="primary">Peor rendimiento que las aplicaciones nativas</ion-text><br />
+            <hr color="danger">
+            <ion-text class="text" color="primary">Dependencia con los plugins</ion-text><br />
+            <hr color="danger">
+            <ion-text class="text" color="primary">Aplicaciones más pesadas que las nativas</ion-text>
+            <hr color="danger">
+          </ion-card-content>
+        </ion-card>
+      </ion-slide>
+      <ion-slide>
+        <ion-card class="card">
+          <ion-card-header>
+            <ion-card-subtitle>
+              <ion-icon name="logo-ionic"></ion-icon> Teoría Ionic
+            </ion-card-subtitle>
             <ion-card-title>Sesión práctica</ion-card-title>
           </ion-card-header>
           <ion-card-content class="cardStyle">
@@ -71,10 +89,12 @@
             <p class="comando"> $ ionic start </p>
             <p class="comando"> $ cd myApp</p>
             <p class="comando"> $ ionic serve</p>
+            <p class="comando"> $ ionic serve --lab</p>
             <p class="comando"> $ ionic generate [options]</p>
           </ion-card-content>
         </ion-card>
       </ion-slide>
+
     </ion-slides>
   </ion-content>
 

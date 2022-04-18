@@ -1,29 +1,38 @@
-.cardStyle{
-    text-align: center;
-    height: max-content;
+.cardStyle {
+  text-align: center;
+  height: max-content;
 }
 
-.cardImg{
-margin: 2%;
-}
-.card{
-    width: 100%;
-    padding-top: 10%;
-    padding-bottom: 20%;
-    margin-bottom: 2%;
-}
-.title{
-    color: rgb(0, 85, 255);
+.cardImg {
+  margin: 2%;
 }
 
-.list{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+.card {
+  width: 100%;
+  padding-top: 10%;
+  padding-bottom: 20%;
+  margin-bottom: 2%;
 }
 
-.comando{
+.title {
+  color: rgb(0, 85, 255);
+}
 
-    text-align: left;
-    background-color: rgb(136, 136, 136);
-    font-size: 20px;
-    color: white;
+.list {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.comando {
+
+  text-align: left;
+  background-color: rgb(136, 136, 136);
+  font-size: 20px;
+  color: white;
+
+}
+
+.text {
+  text-align: left;
+  font-size: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
